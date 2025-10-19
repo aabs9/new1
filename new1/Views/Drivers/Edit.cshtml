@@ -83,3 +83,135 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 30px;
+        direction: rtl;
+    }
+
+    h1 {
+        text-align: center;
+        color: #222;
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    h4 {
+        text-align: center;
+        color: #555;
+        margin-bottom: 25px;
+    }
+
+    hr {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        max-width: 600px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+    }
+
+        .col-md-4:hover {
+            transform: translateY(-3px);
+        }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    label.control-label {
+        font-weight: 600;
+        color: #333;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+            outline: none;
+        }
+
+    .form-check {
+        margin-bottom: 20px;
+    }
+
+    .form-check-label {
+        font-weight: 600;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-primary {
+        background: linear-gradient(90deg, #0d6efd, #007bff);
+        border: none;
+        padding: 12px 40px;
+        border-radius: 10px;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+        display: block;
+        margin: 25px auto 10px;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #084298, #0056b3);
+            transform: scale(1.03);
+        }
+
+    a {
+        display: block;
+        text-align: center;
+        color: #0d6efd;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+        a:hover {
+            color: #084298;
+        }
+
+    .text-danger {
+        font-size: 0.9rem;
+        margin-top: 4px;
+        display: block;
+    }
+
+   
+
+    .btn-primary {
+        width: 100%;
+        padding: 14px;
+    }
+
+    }
+</style>
