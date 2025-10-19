@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "ابحث عن خط سير";
+}
+<h2>ابحث عن السائق</h2>
+<form asp-action="SearchResult" method="post" class="row g-3">
+    <div class="col-md-3">
+        <label class="form-label">كلمة بحث حرة</label>
+        <input name="keyword" class="form-control" placeholder="اسم / رقم سيارة / منطقة" />
+    </div>
+   
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">بحث</button>
+    </div>
+</form>

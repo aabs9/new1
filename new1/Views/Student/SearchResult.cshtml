@@ -1,0 +1,38 @@
+﻿@model IEnumerable<new1.Models.Driver>
+@{
+    ViewData["Title"] = "نتائج البحث";
+}
+<h2>نتائج البحث</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>الاسم</th>
+            <th>الهاتف</th>
+            <th>المنطقة</th>
+            <th>رقم السيارة</th>
+            <th>النوع</th>
+            <th>السعة</th>
+            <th>المتبقي</th>
+            <th>التبريد</th>
+            <th>التقييم</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var d in Model)
+        {
+            <tr>
+                <td>@d.Name</td>
+                <td><a href="tel:@d.Phone">@d.Phone</a></td>
+                <td>@d.Areas</td>
+                <td>@d.CarNumber</td>
+                <td>@d.CarType</td>
+                <td>@d.Capacity</td>
+                <td>@d.Remaining</td>
+                <td>@(d.HasAC ? "نعم" : "لا")</td>
+                <td>@d.Rating /5</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<a class="btn btn-outline-danger" asp-controller="Student" asp-action="Search">رجوع</a>
